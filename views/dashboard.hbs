@@ -1,0 +1,37 @@
+<!-- In views/dashboard.hbs -->
+<form action="/upload" method="POST" enctype="multipart/form-data">
+  <input type="file" name="timetable" accept=".csv" required>
+  <button type="submit">Upload Timetable</button>
+</form>
+
+<!-- In views/dashboard.hbs -->
+
+<!-- Display the updated timetable -->
+<h2>Updated Timetable</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Course Code</th>
+      <th>Course Name</th>
+      <th>Course Type</th>
+      <th>Self-Study Hours</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each updatedTimetable}}
+    <tr>
+      <td>{{@key}}</td>
+      <td>{{this.courseName}}</td>
+      <td>{{this.courseType}}</td>
+      <td>{{this.selfStudyHours}} hours</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<!-- In views/dashboard.hbs -->
+
+<!-- Add logout button -->
+<form action="/logout" method="GET">
+  <button type="submit">Logout</button>
+</form>
