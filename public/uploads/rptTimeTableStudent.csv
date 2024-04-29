@@ -1,0 +1,24 @@
+﻿MentorSlot,SlotDetails
+, ( Attendance is Compulsory )
+
+Timing,Mon,Tue,Wed,Thu,Fri,Sat,Sun
+09-10 AM," Lecture / G:All C:INT219 / R: 38-818 / S:K22MK"," Lecture / G:All C:INT222 / R: 38-817 / S:K22MK"," Lecture / G:All C:CSE310 / R: 38-906 / S:K22MK",,,Project Work/ Other Weekly Activities. Check Schedule Below,
+10-11 AM," Lecture / G:All C:INT219 / R: 38-818 / S:K22MK"," Lecture / G:All C:INT222 / R: 38-817 / S:K22MK"," Lecture / G:All C:CSE310 / R: 38-906 / S:K22MK"," Tutorial / G:1 C:PEA305 / R: 33-503 / S:K22MK"," Practical / G:0 C:CSE310 / R: 37-609 / S:K22MK",Project Work/ Other Weekly Activities. Check Schedule Below,
+11-12 AM," Lecture / G:All C:PEA305 / R: 33-508 / S:K22MK"," Lecture / G:All C:CSE408 / R: 38-912 / S:K22MK"," Practical / G:0 C:INT222 / R: 37-602 / S:K22MK"," Lecture / G:All C:INT426 / R: 37-908 / S:K22MK"," Practical / G:0 C:CSE310 / R: 37-609 / S:K22MK",Project Work/ Other Weekly Activities. Check Schedule Below,
+12-01 PM,," Lecture / G:All C:CSE316 / R: 33-505X / S:K22MK"," Practical / G:0 C:INT222 / R: 37-602 / S:K22MK"," Lecture / G:All C:CSE310 / R: 38-809 / S:K22MK",,Project Work/ Other Weekly Activities. Check Schedule Below,
+01-02 PM," Practical / G:1 C:CSE325 / R: 33-308 / S:K22MK",," Lecture / G:All C:PEA305 / R: 33-512 / S:K22MK",," Practical / G:0 C:INT219 / R: 26-604 / S:K22MK",Project Work/ Other Weekly Activities. Check Schedule Below,
+02-03 PM," Practical / G:1 C:CSE325 / R: 33-308 / S:K22MK",,," Lecture / G:All C:CSE316 / R: 33-503 / S:K22MK"," Practical / G:0 C:INT219 / R: 26-604 / S:K22MK",Project Work/ Other Weekly Activities. Check Schedule Below,
+03-04 PM,,,,," Lecture / G:All C:CSE316 / R: 33-410 / S:K22MK",Project Work/ Other Weekly Activities. Check Schedule Below,
+
+AttendanceDate,ID08_09_AM,ID09_10_AM,ID10_11_AM,ID11_12_AM,ID12_01_PM,ID01_02_PM,ID02_03_PM,ID03_04_PM,ID04_05_PM,ID05_06_PM,ID06_07_PM,ID07_08_PM,ID08_09_PM
+
+CourseCode,Coursetype,CourseName,Lectures,Tutorial,Practical,Credits,Faculty___Block___RoomNo___Cabin_No___
+CSE310,CR,PROGRAMMING IN JAVA,3,0,2,4,Mohnish Vidyarthi ( 34-202-CH16 )   Last Updated :: Jan 12 2024 12:26PM
+CSE316,CE,OPERATING SYSTEMS,3,0,0,3,Dr. Parvinder Singh ( 33-214-CH16 )   Last Updated :: Feb 13 2024 11:47AM
+CSE325,CE,OPERATING SYSTEMS LABORATORY,0,0,2,1,Dr. Parvinder Singh ( 33-214-CH16 )   Last Updated :: Feb 13 2024 11:47AM
+CSE408,CR,DESIGN AND ANALYSIS OF ALGORITHMS,3,0,0,3,"Chiragkumar Dineshbhai Aboti ( 34-202-CH21 ) , Dr. Anshu Sharma ( 34-202-CH7 )   Last Updated :: Feb  2 2024  4:12PM, Last Updated :: Jan 12 2024 12:17PM"
+INT219,EM,FRONT END WEB DEVELOPER,2,0,2,3,Kedar Nath Singh ( 34-209-CH9 )   Last Updated :: Oct  4 2023  4:02PM
+INT222,EM,ADVANCED WEB DEVELOPMENT,2,0,2,3,Akash Pundir ( 34-207-CH14 )   Last Updated :: Oct  3 2023  5:08PM
+INT426,CR,GENERATIVE ARTIFICIAL INTELLIGENCE,2,0,2,3,Anzar Hussain Lone ( 33-203-CH16 )   Last Updated :: Jan 19 2024  1:48PM
+PEA305,APE,ANALYTICAL SKILLS-I,2,1,0,3,Dheeraj Gupta ( 38-509-CH17 )   Last Updated :: Jul 20 2023 12:00PM
+

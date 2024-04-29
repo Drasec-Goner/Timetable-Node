@@ -40,6 +40,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Set up static directory
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Authentication middleware
+const requireAuth = (req, res, next) => {
+  if (!req.session.userId) {
+    return res.redirect('/login');
+  }
+  next();
+};
+
 // Set up view engine
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
@@ -108,35 +116,6 @@ app.get('/dashboard', (req, res) => {
 });
 
 // In app.js
-
-// File upload route
-app.post('/upload', (req, res) => {
-  // Check if user is authenticated
-  if (!req.session.userId) {
-    return res.redirect('/login');
-  }
-
-  // // Check if file was uploaded
-  // if (!req.files || Object.keys(req.files).length === 0) {
-  //   return res.status(400).send('No files were uploaded.');
-  // }
-  // Check if file was uploaded
-  if (!req.files || Object.keys(req.files).length === 0) {
-    return res.status(400).send('No files were uploaded.');
-  }
-
-  // Access the uploaded file
-  const timetableFile = req.files.timetable;
-
-  // Move the file to the public/uploads directory
-  timetableFile.mv(path.join(__dirname, 'public', 'uploads', timetableFile.name), (err) => {
-    if (err) {
-      return res.status(500).send(err);
-    }
-    res.send('File uploaded successfully.');
-  });
-});
-
 
 const fileUpload = require('express-fileupload');
 app.use(fileUpload());
@@ -235,18 +214,7 @@ console.log(updatedTimetable);
 res.render('dashboard', { updatedTimetable });
   });
 });
-
-
-// In app.js
-
-// Authentication middleware
-const requireAuth = (req, res, next) => {
-  if (!req.session.userId) {
-    return res.redirect('/login');
-  }
-  next();
-};
-// In app.js
+  gi
 
 // Dashboard route
 app.get('/dashboard', requireAuth, (req, res) => {
@@ -268,12 +236,6 @@ app.get('/logout', (req, res) => {
 });
 
 // In app.js
-
-// Error handling middleware
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).send('Something went wrong!');
-});
 
 
 
